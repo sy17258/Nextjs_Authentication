@@ -240,9 +240,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Developer
 
 **Shivam Yadav**
-- GitHub: [@your-github-username](https://github.com/your-github-username)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-- Email: your.email@example.com
+- GitHub: [@your-github-username](https://github.com/sy17258)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/shivamyadav-sy)
+- Email: sy17258@gmail.com
 
 ## 🙏 Acknowledgments
 
