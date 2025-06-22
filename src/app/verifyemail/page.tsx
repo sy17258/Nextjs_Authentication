@@ -17,7 +17,7 @@ export default function VerifyEmailPage() {
             await axios.post('/api/users/verifyemail', { token });
             setVerified(true);
             setError(false);
-        } catch (error: any) {
+        } catch (error) {
             setError(true);
             console.log(error.response?.data);
         } finally {
@@ -81,7 +81,7 @@ export default function VerifyEmailPage() {
                             <XCircle className="h-16 w-16 text-red-500 mx-auto mb-4" />
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Verification Failed</h3>
                             <p className="text-gray-600 mb-6">
-                                We couldn't verify your email. The verification link may have expired or is invalid.
+                                We could not verify your email. The verification link may have expired or is invalid.
                             </p>
                             <div className="space-y-3">
                                 <Link

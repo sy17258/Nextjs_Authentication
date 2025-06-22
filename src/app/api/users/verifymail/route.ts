@@ -29,7 +29,7 @@ export async function POST(request: NextRequest){
             success: true
         }, { status: 500 });
         
-    } catch (error: any) { // Catch any errors during processing
+    } catch (error ) { // Catch    errors during processing
         return NextResponse.json({ error: error.message }, { status: 500 }); // Return 500 error with error message
     }
 }

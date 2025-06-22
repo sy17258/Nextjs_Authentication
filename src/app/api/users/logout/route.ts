@@ -17,7 +17,7 @@ export async function GET(request: NextRequest){ // Define POST handler function
 
         return response; // Return the response to complete the request
 
-        }catch(error:any){ // Catch any errors that occur during execution
+        }catch(error){ // Catch    errors that occur during execution
             return NextResponse.json({error: error.message}, {status:500}); // Return error message with 500 Internal Server Error status code
         }
 }

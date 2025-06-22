@@ -11,7 +11,7 @@ import { User, LogOut, UserCircle, Mail, Shield } from "lucide-react";
 export default function Profile() {
     const router = useRouter();
     const [data, setData] = useState("nothing");
-    const [userDetails, setUserDetails] = useState<any>(null);
+    const [userDetails, setUserDetails] = useState<  >(null);
     const [loading, setLoading] = useState(false);
 
     const logout = async () => {
@@ -19,7 +19,7 @@ export default function Profile() {
             await axios.get("/api/users/logout");
             toast.success("Logout successful");
             router.push("/login");
-        } catch (error: any) {
+        } catch (error ) {
             console.log(error.message);
             toast.error(error.message);
         }
@@ -32,7 +32,8 @@ export default function Profile() {
             console.log(res.data);
             setData(res.data.data._id);
             setUserDetails(res.data.data);
-        } catch (error: any) {
+        } catch (error ) {
+            console.error("Error fetching user details:", error);
             toast.error("Failed to fetch user details");
         } finally {
             setLoading(false);

@@ -50,7 +50,7 @@ export async function POST(request: NextRequest){ // Define async POST handler f
         return response; // Send the response to the client
 
         console.log("Password is valid"); // This line is unreachable code after return statement
-    }catch (error:any) { // Catch any errors during processing
+    }catch (error) { // Catch    errors during processing
         return NextResponse.json({error: error.message}, {status: 500}); // Return 500 error with error message
     }
 }

@@ -23,7 +23,7 @@ export default function LoginPage() {
             console.log("Login success", response.data);
             toast.success("Login successful!");
             router.push("/");
-        } catch (error: any) {
+        } catch (error ) {
             console.log("Login failed", error.message);
             toast.error(error.response?.data?.error || "Login failed");
         } finally {
